@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Travlog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        line-height: 28.8px;
+        font-weight: 400;
+      }
+      .font-nunito {
+        font-family: "Nunito", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="px-[16px] md:px-[64px] xl:px-[128px] xl:w-[1184] xl:mx-auto">
+      <header class="py-[32px]">
+        <navbar class="flex justify-between items-center">
+          <img
+            src="./images/header-main-logo.svg"
+            alt="header-main-logo"
+            class="md:order-2 xl:order-1"
+          />
+          <img
+            src="./images/header-menu.svg"
+            alt="header-menu"
+            class="md:order-1 xl:hidden"
+          />
+          <div
+            class="hidden xl:block xl:flex gap-[64px] text-silver text-[14px] leading-[16.8px] font-[700] font-nunito xl:order-2"
+          >
+            <a href="#" class="text-light-dark">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Special Deals</a>
+            <a href="#">Contact</a>
+          </div>
+          <div
+            class="hidden md:block md:flex gap-[32px] text-[14px] leading-[16.8px] font-[700] font-nunito order-3"
+          >
+            <div class="text-light-dark content-center">Log In</div>
+            <button
+              class="bg-purple px-[32px] py-[16px] text-dim-light rounded-[100px]"
+            >
+              Sign Up
+            </button>
+          </div>
+        </navbar>
+      </header>
+      <main>
+        <section class="py-[32px] md:py-[64px]">
+          <div class="xl:flex xl:justify-between xl:items-center">
+            <div
+              class="xl:min-w-[772px] md:px-[62px] xl:px-[0px] mb-[32px] md:mb-[64px] xl:mb-[0px] xl:order-1"
+            >
+              <img src="./images/section1-picture.png" alt="section1-picture" />
+            </div>
+            <div
+              class="flex flex-col items-center xl:items-start text-[14px] leading-[16.8px] font-nunito relative"
+            >
+              <div
+                class="flex gap-[16px] items-center bg-white rounded-[100px] px-[32px] py-[16px] mb-[16px] md:mb-[43px] shadow-[0px_0px_0px_0px_#00000012,0px_34px_75px_0px_#00000012,0px_137px_137px_0px_#0000000f,0px_308px_185px_0px_#0000000a,0px_548px_219px_0px_#00000003,0px_856px_240px_0px_#00000000]"
+              >
+                <div class="text-pink">Explore the world!</div>
+                <img src="./images/logo-work.svg" alt="logo-work" />
+              </div>
+              <h1
+                class="md:max-w-[616px] font-nunito text-[40px] md:text-[56px] xl:text-[69px] leading-[48px] md:leading-[67.2px] xl:leading-[82.8px] font-[700] text-center mb-[24px] md:mb-[43px] xl:text-left"
+              >
+                Travel <span class="text-pink">top destination</span> of the
+                world
+              </h1>
+              <p
+                class="md:max-w-[420px] text-silver text-[16px] md:text-[18px] leading-[25.6px] md:leading-[28.8px] text-center mb-[32px] md:mb-[43px] xl:text-left"
+              >
+                We always make our customer happy by providing as many choices
+                as possible
+              </p>
+              <div
+                class="w-full flex flex-col md:flex-row gap-[16px] md:justify-center xl:justify-start items-center"
+              >
+                <button
+                  class="w-full md:w-[141px] bg-purple text-dim-light py-[24px] md:py-[16px] mb-[24px] md:mb-[0px] rounded-[100px] shadow-[0px_0px_0px_0px_#0000001A,0px_5px_11px_0px_#0000001A,0px_20px_20px_0px_#00000017,0px_45px_27px_0px_#0000000D,0px_81px_32px_0px_#00000003,0px_126px_35px_0px_#00000000]"
+                >
+                  Get Started
+                </button>
+                <button
+                  class="w-full md:w-[181px] bg-white flex gap-[8px] justify-center items-center border border-dim-light py-[24px] md:py-[16px] rounded-[100px]"
+                >
+                  <img
+                    src="./images/logo-play-circle.svg"
+                    alt="logo-play-circle"
+                  />
+                  <div class="light-dark">Watch Demo</div>
+                </button>
+              </div>
+              <img
+                src="./images/OBJECTS.png"
+                alt="OBJECTS"
+                class="hidden md:block absolute left-[-26px] xl:left-[-90px] bottom-[14px] xl:bottom-[-190px]"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="py-[32px] xl:py-[64px]">
+          <div
+            class="md:max-w-[568px] xl:max-w-full mx-auto flex gap-[27px] xl:gap-[98.6px] flex-wrap justify-center"
+          >
+            <img
+              src="./images/brand-logo1.svg"
+              alt="brand-logo1"
+              class="w-[132px] md:w-[212px] h-[20px] md:h-[32px] md:mb-[5px]"
+            />
+            <img
+              src="./images/brand-logo2.svg"
+              alt="brand-logo2"
+              class="w-[70px] md:w-[113px] h-[20px] md:h-[32px] md:mb-[5px]"
+            />
+            <img
+              src="./images/brand-logo3.svg"
+              alt="brand-logo3"
+              class="w-[117px] md:w-[188px] h-[20px] md:h-[32px] md:mb-[5px]"
+            />
+            <img
+              src="./images/brand-logo4.svg"
+              alt="brand-logo4"
+              class="w-[64px] md:w-[102px] h-[20px] md:h-[32px] md:mb-[5px]"
+            />
+            <img
+              src="./images/brand-logo5.svg"
+              alt="brand-logo5"
+              class="w-[108px] md:w-[173px] h-[20px] md:h-[32px] md:mb-[5px]"
+            />
+          </div>
+        </section>
+        <section class="py-[32px] md:py-[64px]">
+          <div class="xl:flex xl:items-center">
+            <div
+              class="xl:min-w-[444px] mb-[32px] md:mb-[64px] xl:mb-[0px] font-[700] font-nunito text-center xl:text-left"
+            >
+              <div
+                class="text-pink text-[16px] md:text-[23px] leading-[19.2px] md:leading-[27.6px] tracking-[0.2em] uppercase mb-[16px]"
+              >
+                Services
+              </div>
+              <h2
+                class="text-dark text-[32px] md:text-[40px] xl:text-[44px] leading-[38.4px] md:leading-[48px] xl:leading-[52.8px]"
+              >
+                Our top value categories for you
+              </h2>
+            </div>
+            <div class="xl:w-[740px] xl:overflow-x-scroll">
+              <div
+                class="xl:w-[1092px] flex flex-col md:flex-row gap-[16px] items-center md:items-stretch"
+              >
+                <div
+                  class="w-full p-[32px] md:p-[64px_32px_35px_32px] flex md:flex-1 flex-col items-center bg-white border border-borderline rounded-[32px]"
+                >
+                  <img
+                    src="./images/logo-destination.svg"
+                    alt="logo-destination"
+                  />
+                  <div class="text-center">
+                    <h3
+                      class="md:min-h-[68px] text-dark text-[24px] md:text-[28px] leading-[28.8px] md:leading-[33.6px] font-[700] font-nunito my-[32px] md:mt-[64px]"
+                    >
+                      Best Tour Guide
+                    </h3>
+                    <p class="text-silver">
+                      What looked like a small patch of purple grass, above five
+                      feet.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-full p-[32px] md:p-[64px_32px_35px_32px] flex md:flex-1 flex-col items-center bg-white rounded-[32px] shadow-[0px_0px_0px_0px_#0000001A,0px_41px_89px_0px_#0000001A]"
+                >
+                  <img src="./images/logo-booking.svg" alt="logo-booking" />
+                  <div class="text-center">
+                    <h3
+                      class="md:min-h-[68px] text-dark text-[24px] md:text-[28px] leading-[28.8px] md:leading-[33.6px] font-[700] font-nunito my-[32px] md:mt-[64px]"
+                    >
+                      Easy Booking
+                    </h3>
+                    <p class="text-silver">
+                      Square, was moving across the sand in their direction.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-full p-[32px] md:p-[64px_32px_35px_32px] flex md:flex-1 flex-col items-center bg-white border border-borderline rounded-[32px]"
+                >
+                  <img src="./images/logo-cloudy.svg" alt="logo-cloudy" />
+                  <div class="text-center">
+                    <h3
+                      class="md:min-h-[68px] text-dark text-[24px] md:text-[28px] leading-[28.8px] md:leading-[33.6px] font-[700] font-nunito my-[32px] md:mt-[64px]"
+                    >
+                      Weather Forecast
+                    </h3>
+                    <p class="text-silver">
+                      What looked like a small patch of purple grass, above five
+                      feet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-[32px]">
+          <div
+            class="xl:flex xl:justify-between mb-[32px] md:mb-[67px] font-[700] font-nunito text-center xl:text-left"
+          >
+            <div>
+              <div
+                class="text-pink text-[16px] md:text-[23px] leading-[19.2px] md:leading-[27.6px] tracking-[0.2em] uppercase mb-[16px]"
+              >
+                Top Destination
+              </div>
+              <h2
+                class="text-dark text-[32px] md:text-[40px] xl:text-[44px] leading-[38.4px] md:leading-[48px] xl:leading-[52.8px] mb-[32px] md:mb-[64px] xl:mb-[0px]"
+              >
+                Explore top destination
+              </h2>
+            </div>
+            <div
+              class="md:max-w-[232px] xl:min-w-[232px] md:mx-auto xl:mx-[0px] flex justify-between items-center"
+            >
+              <div
+                class="bg-white w-[64px] md:w-[100px] h-[64px] md:h-[100px] flex justify-center items-center border border-borderline rounded-full"
+              >
+                <img src="./images/logo-arrow-left.svg" alt="logo-arrow-left" />
+              </div>
+              <div
+                class="bg-purple w-[64px] md:w-[100px] h-[64px] md:h-[100px] flex justify-center items-center rounded-full shadow-[0px_0px_0px_0px_#00000014,0px_7px_16px_0px_#00000012,0px_29px_29px_0px_#0000000F,0px_65px_39px_0px_#0000000A,0px_116px_46px_0px_#00000003,0px_181px_51px_0px_#00000000]"
+              >
+                <img
+                  src="./images/logo-arrow-right.svg"
+                  alt="logo-arrow-right"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[32px]">
+            <div class="rounded-[32px]">
+              <img
+                src="./images/image-beach.png"
+                alt="image-beach"
+                class="w-full h-[314px] object-cover object-top"
+              />
+              <div
+                class="p-[32px] rounded-[0px_0px_32px_32px] shadow-[0px_0px_0px_0px_#0000000D,0px_32px_71px_0px_#0000000D,0px_128px_128px_0px_#0000000A,0px_288px_173px_0px_#00000008,0px_513px_205px_0px_#00000003,0px_801px_224px_0px_#00000000]"
+              >
+                <div
+                  class="text-[23px] leading-[27.6px] font-[700] font-nunito mb-[16px]"
+                >
+                  <div class="text-pink mb-[8px]">$550.16</div>
+                  <h3 class="text-dark">Paradise Beach, Bantayan Island</h3>
+                </div>
+                <div class="text-grey mb-[32px]">Rome, Italy</div>
+                <div class="flex gap-[8px] items-center">
+                  <div
+                    class="text-orange text-[23px] leading-[27.6px] font-[700] font-nunito"
+                  >
+                    4.8
+                  </div>
+                  <img
+                    src="./images/logo-star-orange.svg"
+                    alt="logo-star-orange"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[32px]">
+              <img
+                src="./images/image-ocean.png"
+                alt="image-ocean"
+                class="w-full h-[314px] object-cover object-top"
+              />
+              <div
+                class="p-[32px] rounded-[0px_0px_32px_32px] shadow-[0px_0px_0px_0px_#0000000D,0px_32px_71px_0px_#0000000D,0px_128px_128px_0px_#0000000A,0px_288px_173px_0px_#00000008,0px_513px_205px_0px_#00000003,0px_801px_224px_0px_#00000000]"
+              >
+                <div
+                  class="text-[23px] leading-[27.6px] font-[700] font-nunito mb-[16px]"
+                >
+                  <div class="text-pink mb-[8px]">$20.99</div>
+                  <h3 class="text-dark">Ocean with full of Colors</h3>
+                </div>
+                <div class="text-grey mb-[32px]">Maldives</div>
+                <div class="flex gap-[8px] items-center">
+                  <div
+                    class="text-orange text-[23px] leading-[27.6px] font-[700] font-nunito"
+                  >
+                    4.5
+                  </div>
+                  <img
+                    src="./images/logo-star-orange.svg"
+                    alt="logo-star-orange"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[32px]">
+              <img
+                src="./images/image-mountain.png"
+                alt="image-mountain"
+                class="w-full h-[314px] object-cover object-top"
+              />
+              <div
+                class="p-[32px] rounded-[0px_0px_32px_32px] shadow-[0px_0px_0px_0px_#0000000D,0px_32px_71px_0px_#0000000D,0px_128px_128px_0px_#0000000A,0px_288px_173px_0px_#00000008,0px_513px_205px_0px_#00000003,0px_801px_224px_0px_#00000000]"
+              >
+                <div
+                  class="text-[23px] leading-[27.6px] font-[700] font-nunito mb-[16px]"
+                >
+                  <div class="text-pink mb-[8px]">$150.99</div>
+                  <h3 class="text-dark">Mountain View, Above the cloud</h3>
+                </div>
+                <div class="text-grey mb-[32px]">United Arab Emeries</div>
+                <div class="flex gap-[8px] items-center">
+                  <div
+                    class="text-orange text-[23px] leading-[27.6px] font-[700] font-nunito"
+                  >
+                    5.0
+                  </div>
+                  <img
+                    src="./images/logo-star-orange.svg"
+                    alt="logo-star-orange"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-[32px]">
+          <img src="./images/image-travelpoint.png" alt="image-travelpoint" />
+          <div class="font-[700] text-center mt-[64px] mb-[32px]">
+            <div
+              class="text-pink text-[16px] leading-[19.2px] font-nunito tracking-[0.2em] uppercase mb-[16px]"
+            >
+              Travel Point
+            </div>
+            <h2
+              class="text-dark text-[32px] leading-[38.4px] font-nunito mb-[32px]"
+            >
+              We helping you find your dream location
+            </h2>
+            <p class="text-silver text-[16px] leading-[25.6px] font-[400]">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC.
+            </p>
+          </div>
+          <div class="flex flex-col gap-[16px]">
+            <div
+              class="text-center border border-borderline rounded-[32px] py-[32px]"
+            >
+              <h4
+                class="text-orange text-[35px] leading-[42px] font-nunito font-[700] mb-[16px]"
+              >
+                500+
+              </h4>
+              <div class="text-dark">Holiday Package</div>
+            </div>
+            <div
+              class="text-center border border-borderline rounded-[32px] py-[32px]"
+            >
+              <h4
+                class="text-orange text-[35px] leading-[42px] font-nunito font-[700] mb-[16px]"
+              >
+                100
+              </h4>
+              <div class="text-dark">Luxury Hotel</div>
+            </div>
+            <div
+              class="text-center border border-borderline rounded-[32px] py-[32px]"
+            >
+              <h4
+                class="text-orange text-[35px] leading-[42px] font-nunito font-[700] mb-[16px]"
+              >
+                7
+              </h4>
+              <div class="text-dark">Premium Airlines</div>
+            </div>
+            <div
+              class="text-center border border-borderline rounded-[32px] py-[32px]"
+            >
+              <h4
+                class="text-orange text-[35px] leading-[42px] font-nunito font-[700] mb-[16px]"
+              >
+                2k+
+              </h4>
+              <div class="text-dark">Happy Customer</div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="p-[32px]">
+            <div class="px-[24px] pb-[64px]">
+              <img
+                src="./images/bg-paradise-on-earth.png"
+                alt="bg-paradise-on-earth"
+              />
+            </div>
+            <div class="font-[700] text-center mb-[32px]">
+              <div
+                class="text-pink text-[16px] leading-[19.2px] font-nunito tracking-[0.2em] uppercase mb-[16px]"
+              >
+                Key features
+              </div>
+              <h2
+                class="text-dark text-[32px] leading-[38.4px] font-nunito mb-[32px]"
+              >
+                We offer best services
+              </h2>
+              <p class="text-silver text-[16px] leading-[25.6px] font-[400]">
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC.
+              </p>
+            </div>
+            <div class="flex flex-col gap-[8px]">
+              <div class="p-[32px]">
+                <img src="./images/logo-location.svg" alt="logo-location" />
+                <div class="flex flex-col gap-[8px] mt-[32px]">
+                  <h4
+                    class="text-dark text-[23px] leading-[27.6px] font-[700] font-nunito"
+                  >
+                    We offer best services
+                  </h4>
+                  <p class="text-silver">
+                    Lorem Ipsum is not simply random text
+                  </p>
+                </div>
+              </div>
+              <div class="p-[32px] border border-borderline rounded-[32px]">
+                <img src="./images/logo-date.svg" alt="logo-date" />
+                <div class="flex flex-col gap-[8px] mt-[32px]">
+                  <h4
+                    class="text-dark text-[23px] leading-[27.6px] font-[700] font-nunito"
+                  >
+                    Schedule your trip
+                  </h4>
+                  <p class="text-silver">
+                    It has roots in a piece of classical
+                  </p>
+                </div>
+              </div>
+              <div class="p-[32px]">
+                <img src="./images/logo-ticket.svg" alt="logo-ticket" />
+                <div class="flex flex-col gap-[8px] mt-[32px]">
+                  <h4
+                    class="text-dark text-[23px] leading-[27.6px] font-[700] font-nunito"
+                  >
+                    Get discounted coupons
+                  </h4>
+                  <p class="text-silver">
+                    Lorem Ipsum is not simply random text
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-[32px]">
+          <div class="flex flex-col items-center">
+            <div class="mb-[64px] font-[700] font-nunito text-center">
+              <div
+                class="text-pink text-[16px] leading-[19.2px] tracking-[0.2em] uppercase mb-[16px]"
+              >
+                Testimonials
+              </div>
+              <h2 class="text-dark text-[32px] leading-[38.4px]">
+                Trust our clients
+              </h2>
+            </div>
+            <img src="./images/image-mark-smith.png" alt="image-mark-smith" />
+            <div
+              class="text-grey text-[28px] leading-[33.6px] font-[700] font-nunito text-center mt-[64px] mb-[32px]"
+            >
+              <span class="text-orange">Mark Smith</span>
+              <span class="text-[23px] leading-[27.6px]">/</span> Travel
+              Enthusiast
+            </div>
+            <div class="flex gap-[16px]">
+              <img src="./images/logo-star-yellow.svg" alt="logo-star-yellow" />
+              <img src="./images/logo-star-yellow.svg" alt="logo-star-yellow" />
+              <img src="./images/logo-star-yellow.svg" alt="logo-star-yellow" />
+              <img src="./images/logo-star-yellow.svg" alt="logo-star-yellow" />
+              <img src="./images/logo-star-yellow.svg" alt="logo-star-yellow" />
+            </div>
+            <p class="text-grey font-[450] font-nunito text-center my-[64px]">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC.
+            </p>
+            <div class="flex gap-[24px] items-center">
+              <div>
+                <img
+                  src="./images/logo-circle-silver.svg"
+                  alt="logo-circle-silver"
+                />
+              </div>
+              <div>
+                <img
+                  src="./images/logo-circle-pink.svg"
+                  alt="logo-circle-pink"
+                />
+              </div>
+              <div>
+                <img
+                  src="./images/logo-circle-silver.svg"
+                  alt="logo-circle-silver"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center mt-[64px]">
+            <div
+              class="bg-white w-[64px] h-[64px] flex justify-center items-center border border-borderline rounded-full"
+            >
+              <img src="./images/logo-arrow-left.svg" alt="logo-arrow-left" />
+            </div>
+            <div
+              class="bg-purple w-[64px] h-[64px] flex justify-center items-center rounded-full shadow-[0px_0px_0px_0px_#00000014,0px_7px_16px_0px_#00000012,0px_29px_29px_0px_#0000000F,0px_65px_39px_0px_#0000000A,0px_116px_46px_0px_#00000003,0px_181px_51px_0px_#00000000]"
+            >
+              <img src="./images/logo-arrow-right.svg" alt="logo-arrow-right" />
+            </div>
+          </div>
+        </section>
+        <section class="bg-light-yellow rounded-[32px]">
+          <div class="px-[32px] py-[64px]">
+            <div class="font-[700] font-nunito text-center mb-[64px]">
+              <h4
+                class="text-pink text-[16px] leading-[19.2px] tracking-[0.2em] uppercase mb-[32px]"
+              >
+                subscribe to our newsletter
+              </h4>
+              <p class="text-dark text-[32px] leading-[38.4px]">
+                Prepare yourself & let's explore the beauty of the world
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <button
+                class="w-full bg-white text-grey flex gap-[16px] items-center p-[24px_32px] mb-[32px] rounded-[16px]"
+              >
+                <img src="./images/logo-email.svg" alt="logo-email" />
+                <div>Your Email</div>
+              </button>
+              <button
+                class="w-full bg-purple text-white text-center py-[24px] rounded-[16px]"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="py-[32px]">
+        <div class="mb-[64px]">
+          <img src="./images/header-main-logo.svg" alt="header-main-logo" />
+          <p
+            class="text-silver text-[16px] leading-[25.6px] font-[450] font-nunito my-[32px]"
+          >
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC.
+          </p>
+          <div class="flex gap-[32px] items-center">
+            <img
+              src="./images/logo-facebook-footer.svg"
+              alt="logo-facebook-footer"
+            />
+            <img
+              src="./images/logo-twitter-footer.svg"
+              alt="logo-twitter-footer"
+            />
+            <img
+              src="./images/logo-camera-footer.svg"
+              alt="logo-camera-footer"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[64px] text-dark text-[23px] leading-[27.6px] font-[700] font-nunito"
+        >
+          <div class="flex gap-[32px] justify-between">
+            <h6>Company</h6>
+            <img
+              src="./images/arrow-circle-down.svg"
+              alt="arrow-circle-down"
+              class="h-[24px]"
+            />
+          </div>
+          <div class="flex gap-[32px] justify-between">
+            <h6>Contact Us</h6>
+            <img
+              src="./images/arrow-circle-down.svg"
+              alt="arrow-circle-down"
+              class="h-[24px]"
+            />
+          </div>
+          <div class="flex gap-[32px] justify-between">
+            <h6>Meet Us</h6>
+            <img
+              src="./images/arrow-circle-down.svg"
+              alt="arrow-circle-down"
+              class="h-[24px]"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
